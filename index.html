@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/newsWebsite/image/faviconN/android-chrome-512x512.png">
+    <link rel="stylesheet" href="style.css">
+    <title>News App</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container container flex">
+            <a href="#" onclick="reload()">
+                <img  class="logo" src="image/logo.png" alt="APP LOGO">
+            </a>
+            <div class="nav-link">
+                <ul class="flex" >
+                    <li class="hover-link nav-item" id="ipl" onclick="onclickNav('ipl')" >IPL</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onclickNav('finance')" >Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onclickNav('politics')" >Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g India">
+                <button id="search-btn" class="search-btn">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card-container container flex" id="card-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card" id="card">
+            <div class="card-heading">
+                <img src="https://vai.placeholder.com/400x200" alt="" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 class="news-title" id="news-title" >This is news</h3>
+                <h6 class="news-src" id="news-src" > the gadget 10-06</h6>
+                <p class="news-dis" id="news-dis" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi similique laudantium hic tenetur, dolorum porro, impedit ex officia in soluta consequatur ipsum? Dolorem blanditiis sequi ut voluptatum iure incidunt culpa.</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
