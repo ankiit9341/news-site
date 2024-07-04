@@ -128,14 +128,13 @@ function onclickNav(id) {
     currElement.classList.add("active");
 }
 
-const searchBtn = document.getElementById('search-btn');
-const searchText = document.getElementById('search-text');
+// const searchBtn = document.getElementById('search-btn');
+// const searchText = document.getElementById('search-text');
 
-searchBtn.addEventListener('click', () => {
-    const query = searchText.value;
-    // if (!query) return;
-    // fetchNews(query);
-    // currElement?.classList.remove("active");
-    // currElement = null;
-    document.body.style.innerHTML = `${query} can not be searched`
-});
+// searchBtn.addEventListener('click', () => {
+//     const query = searchText.value;
+//     console.log(`${query} can not be searched this function is not available`);
+//     alert(`${query} can not be searched this function is not available`);
+// });
+
+

@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="/newsWebsite/image/faviconN/android-chrome-512x512.png">
     <link rel="stylesheet" href="style.css">
     <title>News App</title>
 </head>
 <body>
-    <nav>
-        <div class="nav-container container flex">
+    <header>
+        <!-- <div class="nav-container container flex">
             <a href="#" onclick="reload()">
                 <img  class="logo" src="image/logo.png" alt="APP LOGO">
             </a>
@@ -20,13 +21,36 @@
                     <li class="hover-link nav-item" id="politics.json" onclick="onclickNav('politics.json')" >Politics</li>
                 </ul>
             </div>
-            <div class="search-bar flex">
+            <!-- <div class="search-bar flex">
                 <input id="search-text" type="text" class="news-input" placeholder="e.g India">
                 <button id="search-btn" class="search-btn">Search</button>
-            </div>
-        </div>
-    </nav>
+            </div> -->
+        <!-- </div> --> 
 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img  class="logo" src="image/logo.png" alt="APP LOGO">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item nav-item2 hover-link">
+                    <a class="nav-link" id="finance.json"  onclick="onclickNav('finance.json')" aria-current="page" >Finance</a>
+                  </li>
+                  <li class="nav-item nav-item2 hover-link">
+                    <a class="nav-link" id="ipl.json" onclick="onclickNav('ipl.json')" >IPL</a>
+                  </li>
+                  <li class="nav-item hover-link">
+                    <a class="nav-link" id="politics.json" onclick="onclickNav('politics.json')">Politics</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          </header>
     <main>
         <div class="card-container container flex" id="card-container">
             
@@ -43,9 +67,11 @@
                 <h6 class="news-src" id="news-src" > the gadget 10-06</h6>
                 <p class="news-dis" id="news-dis" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi similique laudantium hic tenetur, dolorum porro, impedit ex officia in soluta consequatur ipsum? Dolorem blanditiis sequi ut voluptatum iure incidunt culpa.</p>
             </div>
+            <div class="btn btn-dark">View more</div>
         </div>
     </template>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
